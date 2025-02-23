@@ -3,7 +3,6 @@ addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request));
 });
 
-const CUSTOM_DOMAIN = "timex.fun"
 const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
@@ -170,5 +169,19 @@ function responseUnauthorized(url) {
   return new Response(JSON.stringify({ message: "UNAUTHORIZED" }), {
     status: 401,
     headers: headers,
+  });
+}
+
+
+// 帮助文档页
+import DOCS from './help.html'
+
+// return docs
+if (url.pathname === "/") {
+  return new Response(DOCS, {
+    status: 200,
+    headers: {
+      "content-type": "text/html"
+    }
   });
 }
