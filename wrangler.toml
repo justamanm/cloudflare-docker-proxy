@@ -7,7 +7,7 @@ port = 8787
 local_protocol = "http"
 
 [env.vars]
-CUSTOM_DOMAIN = "timex.fun"
+
 
 [env.dev.vars]
 MODE = "debug"
@@ -29,6 +29,7 @@ name = "cloudflare-docker-proxy"
 [env.production.vars]
 MODE = "production"
 TARGET_UPSTREAM = ""
+CUSTOM_DOMAIN = "timex.fun"
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
