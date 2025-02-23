@@ -3,6 +3,7 @@ addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request));
 });
 
+const CUSTOM_DOMAIN = "timex.fun"
 const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
