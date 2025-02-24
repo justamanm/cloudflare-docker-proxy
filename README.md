@@ -148,6 +148,10 @@ docker info --format '{{.RegistryConfig.Mirrors}}'
 目前只添加了docker.timex.fun，如果还要代理其他镜像源，则还可以添加，如`k8s.timex.fun`、`ghcr.timex.fun`，cloudflare-docker-proxy这个worker都会自动转发，拉取对应源上的镜像然后返回给客户端
 
 
+
+# 源文档
+---
+
 ## Deploy
 
 1. click the "Deploy With Workers" button
