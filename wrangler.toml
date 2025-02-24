@@ -8,6 +8,8 @@ port = 8787
 local_protocol = "http"
 
 [vars]
+MODE = "production"
+TARGET_UPSTREAM = ""
 CUSTOM_DOMAIN = "timex.fun"
 
 [env.dev.vars]
@@ -26,10 +28,6 @@ routes = [
 #   { pattern = "ghcr.libcuda.so", custom_domain = true },
 #   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
 ]
-
-[env.production.vars]
-MODE = "production"
-TARGET_UPSTREAM = ""
 
 
 [env.staging]
