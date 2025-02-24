@@ -20,7 +20,12 @@ jobs:
         with:
           node-version: '22'
           cache: 'yarn'
-          package-manager: 'yarn@4.5.0'  # 指定 Yarn 版本
+
+      - name: Enable Corepack
+        run: corepack enable  # 启用 Corepack
+
+      - name: Verify Yarn Version
+        run: yarn --version   # 验证 Yarn 版本，应为 4.5.0
 
       - name: Publish
         uses: cloudflare/wrangler-action@v3
