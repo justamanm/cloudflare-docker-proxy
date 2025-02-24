@@ -29,6 +29,7 @@ routes = [
 #   { pattern = "cloudsmith.libcuda.so", custom_domain = true },
 ]
 
+[env.production.vars]
 
 [env.staging]
 name = "cloudflare-docker-proxy-staging"
