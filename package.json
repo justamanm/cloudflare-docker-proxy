@@ -4,7 +4,7 @@
   "description": "",
   "version": "1.0.0",
   "author": "ciiiii <allen.cccccnm@gmail.com>",
-  "dependencies": {},
+  "packageManager": "yarn@4.5.0",
   "devDependencies": {
     "prettier": "^2.4.1",
     "webpack": "^5.65.0",
